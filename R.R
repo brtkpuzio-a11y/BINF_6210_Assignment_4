@@ -10,7 +10,7 @@
 #   Combine Bombus COI-5P sequences (NCBI) with geographic data (BOLD) to explore
 #   how phylogenetic relationships (sister taxa, clades) relate to geography.
 #
-# Methods (brief):
+# Methods:
 #   - Clean and summarise BOLD coordinates to check spatial coverage and outliers.
 #   - Download, length-filter, and summarise NCBI COI sequences for QC.
 #   - Build a GTR ML tree (from aligned sequences), identify sister taxa and
