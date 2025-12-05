@@ -31,7 +31,9 @@
 #usethis::pr_pull()
 #usethis::pr_finish()
 #usethis::git_sitrep()
-
+#usethis::create_github_token()
+#gitcreds::gitcreds_delete()
+#gitcreds::gitcreds_set()
 #gitcreds::gitcreds_get()
 #GITHUB_PAT=
 
