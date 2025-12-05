@@ -10,7 +10,7 @@
 #   Combine Bombus COI-5P sequences (NCBI) with geographic data (BOLD) to explore
 #   how phylogenetic relationships (sister taxa, clades) relate to geography.
 #
-# Methods (brief):
+# Methods:
 #   - Clean and summarise BOLD coordinates to check spatial coverage and outliers.
 #   - Download, length-filter, and summarise NCBI COI sequences for QC.
 #   - Build a GTR ML tree (from aligned sequences), identify sister taxa and
@@ -21,6 +21,21 @@
 #   - QC’d Bombus COI-5P sequence + geographic distribution dataset,
 #   - GTR ML tree with sister groups and clades,
 #   - Figures showing clade/sister-taxon geographic distributions and NMDS structure.
+
+#### Github commands ####
+
+#usethis::git_remotes()
+#usethis::git_sitrep()
+#usethis::pr_init(branch = "barteks_branch")
+#usethis::pr_push()
+#usethis::pr_pull()
+#usethis::pr_finish()
+#usethis::git_sitrep()
+#usethis::create_github_token()
+#gitcreds::gitcreds_delete()
+#gitcreds::gitcreds_set()
+#gitcreds::gitcreds_get()
+#GITHUB_PAT=
 
 styler::style_file("R.R") # for consistency in styling!
 # install and/or load packages
@@ -893,10 +908,6 @@ ggplot(scores_df, aes(x = NMDS1, y = NMDS2, colour = clade_group)) +
     panel.grid.minor = element_blank()
   )
 
-usethis::git_remotes()
-usethis::git_sitrep()
-usethis::pr_init(branch = "barteks_branch")
-usethis::pr_push()
-usethis::pr_pull()
-usethis::pr_finish()
-usethis::git_sitrep()
+
+
+
